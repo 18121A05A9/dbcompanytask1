@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="X-UA-compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>db bse</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<link href="https://fonts.googleapis.com/css2?family=Oxygen&display=swap" rel="stylesheet">
+	
+</head>
+<body>
+	<div class="container-fluid">
+		<section class="row">
+			<div class="col-sm-4 col-xs-6 " id="part1">
+				<div>
+				<div class="row">
+				<div class="col-xs-4">	
+				<img src="dblogo.png" alt="logo" class="img-circle" id="logo">
+				</div>
+				<div class="col-xs-8">
+				<span ><strong style="font-size: 1.2em">Bse 1st sem cse <br>All Subjects</strong></span><br>
+				<span id="sir">by Jeet Sir</span>
+			</div>
+			</div>
+				<div id="nos">
+				<span id="no">0</span>
+				<span id="no">15</span>
+				<span id="no">5</span><br>
+				<span id="nodes">materials</span>
+				<span id="nodes">posts</span>
+				<span id="nodes">members</span>
+			</div>
+				<div id="btn" class="row">
+					
+					<span id="join" >Join Class</span>
+					<a href="" id="share"><span>&#x260D;</span></a>
+				
+				</div>
+				<ul class="col-xs-12">
+					<li><span id="ref" onclick="myFunction1()">Timeline</span></li>
+					<li><span id="ref" onclick="myFunction2()"> Live Class</span></li>
+					<li><span id="ref" onclick="myFunction3()">Notes</span></li>
+					<li><span id="ref" onclick="myFunction4()"> Assignment</span></li>
+					<li><span id="ref" onclick="myFunction5()"> Test</span></li>
+					<li><span id="ref" onclick="myFunction6()">Attendence</span></li>
+					<li><span id="ref" onclick="myFunction7()"> Apply for Leave</span></li>
+				</ul>
+			</div>
+
+			</div>
+			<div class="col-sm-5 col-xs-6 well" id="part2">
+				<div id="init">
+				<p class="text-center" id="wel">Welocome To DoraBhai <br>Online Learning Platform</p>
+				<p class="text-center" id="wel_tile">Your Career Our Responsibility</p>
+			</div>
+			<div id="timeline" class="col-xs-12 well">
+			    <span id="btn">Timeline</span>
+			    <ol>
+			    	<li>Quiz is tommorow at 10pm</li>
+			    	<li>Today quiz at 4pm be ready</li>
+
+			    </ol>
+			  </div>
+			<div id="live" class="col-xs-12  well">
+			    <span id="btn">Live Classes</span>
+			    <ol>
+			    	<li>Bootstrap class</li>
+			    	<li>Javascript class</li>
+
+			    </ol>
+			</div>
+			<div id="notes" class="col-xs-12  well">
+			    <span id="btn">Notes</span>
+			    <ol>
+			    	<li>Bootstrap Notes</li>
+			    	<li>Jquery Notes</li>
+			    </ol>
+			</div>
+			<div id="assign" class="col-xs-12  well">
+			   <span id="btn">Assignment</span>
+			   <ol>
+			   	<li>Weekly Assignment</li>
+			   	<li>monthly Assignment</li>
+			   </ol>
+			</div>
+			<div id="test" class="col-xs-12  well">
+			  <span id="btn">Test</span>
+			  <ol>
+			  	<li>Daily Test</li>
+			  	<li>Weekly Test</li>
+
+			  </ol>
+			</div>
+			<div id="attend" class="col-xs-12 text-center well">
+			  <span id="btn">Attendence</span>
+			 <p>To Konow attendance Please send a <br>mail to
+			 	<strong>dbSupport@support.com</strong></p>
+			</div>
+			<div id="leave" class="col-xs-12 text-center well well">
+			   <span id="btn">Leave</span>
+			  <p>To approve leave Please send a <br>mail to
+			 	<strong>dbSupport@support.com</strong></p>
+			</div>
+			</div>
+			<div class="col-sm-3 col-xs-12" id="part3">
+				<h4>About Classroom</h4>
+				<span id="in">In Class</span><br>
+				<section id="class">
+				<div id="cls_dtls">
+				<img src="db.png" class="img-circle" alt="B" class="img-circle">
+				<span id="std">dhoni</span><br>
+				<span id="std_msg">Hey there i am available!</span>
+			</div>
+			<div id="cls_dtls">
+				<img src="db.png" class="img-circle" alt="B" class="img-circle">
+				<span id="std">rohit</span><br>
+				<span id="std_msg">Hey there i am available!</span>
+			</div>
+			<div id="cls_dtls">
+				<img src="db.png" class="img-circle" alt="B" class="img-circle">
+				<span id="std">virat</span><br>
+				<span id="std_msg">Hey there i am available!</span>
+			</div>
+			<div id="cls_dtls">
+				<img src="db.png" class="img-circle" alt="B" class="img-circle">
+				<span id="std">KL</span><br>
+				<span id="std_msg">Hey there i am available!</span>
+			</div>
+		</section>
+			</div>
+		</section>
+	</div>
+
+<script type="text/javascript" src="js/jquery-3.5.1.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script>
+function myFunction1() {
+  document.getElementById("timeline").style.display = "block";
+  document.getElementById('live').style.display='none';
+  document.getElementById('notes').style.display='none';
+  document.getElementById('assign').style.display='none';
+  document.getElementById('test').style.display='none';
+  document.getElementById('attend').style.display='none';
+  document.getElementById('leave').style.display='none';
+}
+function myFunction2() {
+  document.getElementById("timeline").style.display = "none";
+  document.getElementById('live').style.display='block';
+  document.getElementById('notes').style.display='none';
+  document.getElementById('assign').style.display='none';
+  document.getElementById('test').style.display='none';
+  document.getElementById('attend').style.display='none';
+  document.getElementById('leave').style.display='none';
+}
+function myFunction3() {
+  document.getElementById("timeline").style.display = "none";
+  document.getElementById('live').style.display='none';
+  document.getElementById('notes').style.display='block';
+  document.getElementById('assign').style.display='none';
+  document.getElementById('test').style.display='none';
+  document.getElementById('attend').style.display='none';
+  document.getElementById('leave').style.display='none';
+}
+function myFunction4() {
+  document.getElementById("timeline").style.display = "none";
+  document.getElementById('live').style.display='none';
+  document.getElementById('notes').style.display='none';
+  document.getElementById('assign').style.display='block';
+  document.getElementById('test').style.display='none';
+  document.getElementById('attend').style.display='none';
+  document.getElementById('leave').style.display='none';
+}
+function myFunction5() {
+  document.getElementById("timeline").style.display = "none";
+  document.getElementById('live').style.display='none';
+  document.getElementById('notes').style.display='none';
+  document.getElementById('assign').style.display='none';
+  document.getElementById('test').style.display='block';
+  document.getElementById('attend').style.display='none';
+  document.getElementById('leave').style.display='none';
+}
+function myFunction6() {
+  document.getElementById("timeline").style.display = "none";
+  document.getElementById('live').style.display='none';
+  document.getElementById('notes').style.display='none';
+  document.getElementById('assign').style.display='none';
+  document.getElementById('test').style.display='none';
+  document.getElementById('attend').style.display='block';
+  document.getElementById('leave').style.display='none';
+}
+function myFunction7() {
+  document.getElementById("timeline").style.display = "none";
+  document.getElementById('live').style.display='none';
+  document.getElementById('notes').style.display='none';
+  document.getElementById('assign').style.display='none';
+  document.getElementById('test').style.display='none';
+  document.getElementById('attend').style.display='none';
+  document.getElementById('leave').style.display='block';
+}
+</script>
+</body>
+</html>
